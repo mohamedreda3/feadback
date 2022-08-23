@@ -11,10 +11,10 @@ the data you should send to it is a type of JSON object
 "userName":"Mohamed Reda",
 "phone":"01212745939",
 }
-<h1> • Response Example: { "Response": { "success": 1, "message": "success", "Token": "s:28:\"bW1vaDMzNjU4QGdtYWlsLmNvbQ==\";“
+ • Response Example: { "Response": { "success": 1, "message": "success", "Token": "s:28:\"bW1vaDMzNjU4QGdtYWlsLmNvbQ==\";“
 },"data": {"uname": "Mohamed Reda“, "phone": "01212745939“ }}
 The Second endpoint
-• http://registesys.atwebpages.com/login </h1>
+<h1> • http://registesys.atwebpages.com/login </h1>
 to login
 the data you should send to it is a type of JSON object
 • Ex. {
