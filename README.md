@@ -2,8 +2,7 @@
 <h2>RestApi to send feadback on certain thing</h2>
 <ul>
 <h1> The first endpoint: http://registesys.atwebpages.com/signup </h1>
-<h2>to signup a new user</h2>
-<h3>the data you should send to it is a type of JSON object</h3>
+<h2>to signup a new user. the data you should send to it is a type of JSON object</h2>
 <li>  Ex. {
 "email":"mmoh33657@gmail.com",
 "password":"mohamedreda",
@@ -14,8 +13,7 @@
  },"data": {"uname": "Mohamed Reda“, "phone": "01212745939“ }} </li>
 
 <h1> The Second endpoint: http://registesys.atwebpages.com/login </h1>
-<h2> to login </h2>
-the data you should send to it is a type of JSON object
+<h2> to login. the data you should send to it is a type of JSON object</h2>
 <li> Ex. {
 "email":"mmoh33657@gmail.com",
 "password":"mohamedreda",
@@ -25,7 +23,7 @@ the data you should send to it is a type of JSON object
 "phone": "01212745939“ }} </li>
 
 <h1>The Third endpoint: http://registesys.atwebpages.com/logout </h1>
-to logout
+ <h2> to logout </h2>
 <li> Response Example: { "Response": { "success": 1, "message": "success " }} </li>
 
 <h1> The Fourth endpoint: http://registesys.atwebpages.com/sendfeadbacks </h1>
