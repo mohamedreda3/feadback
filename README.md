@@ -1,9 +1,10 @@
 <h1> RestApi in php </h1>
 <h2>RestApi to send feadback on certain thing</h2>
+<h1>That is some of api endpoints</h1>
 <ul>
 <h1> The first endpoint: http://registesys.atwebpages.com/signup </h1>
 <h2>to signup a new user. the data you should send to it is a type of JSON object</h2>
-<h1>That is some of api endpoints</h1>
+
 <li>  Ex. {
 "email":"mmoh33657@gmail.com",
 "password":"mohamedreda",
