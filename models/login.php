@@ -16,11 +16,14 @@ class Login
             echo $this->res->getResponse(0, 'Enter validate Email', null);
         } else if ($data['password'] == null) {
             echo $this->res->getResponse(0, 'Enter password', null);
+        } else if ( !isset($data['type']) ||$data['type'] == null) {
+            echo $this->res->getResponse(0, 'Enter user type', null);
         } else {
             $uemail = trim($data['email']);
             $password = md5(trim($data['password']));
-            $checkDataQuery = mysqli_query($this->conn, "SELECT * FROM user WHERE email = '$uemail' AND pass = '$password'");
-            $checkEmailQuery = mysqli_query($this->conn, "SELECT * FROM user WHERE email = '$uemail'");
+            $type = trim($data['type']);
+            $checkDataQuery = mysqli_query($this->conn, "SELECT * FROM user WHERE email = '$uemail' AND pass = '$password' AND usertype = '$type'");
+            $checkEmailQuery = mysqli_query($this->conn, "SELECT * FROM user WHERE email = '$uemail'AND usertype = '$type'");
             if (mysqli_num_rows($checkEmailQuery) > 0) {
                 if (mysqli_num_rows($checkDataQuery) > 0) {
 

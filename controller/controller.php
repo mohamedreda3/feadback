@@ -55,7 +55,22 @@ class Controller
                 $SendFeadback = new SendFeadbacks($this->conn);
                 $SendFeadback->sendFeadback($data);
            
+        } elseif ($request == 'addsession') {
+           
+                $addsession = new AddSession($this->conn);
+                $addsession->addsession($data);
+           
+        }  elseif ($request == 'updatesession') {
+           
+                $updatesession = new UpdateSession($this->conn);
+                $updatesession->updatesession($data);
+           
+        } elseif ($request == 'deletesession') {
+           
+                $deletesession = new DeleteSession($this->conn);
+                $deletesession->deletesession($data);
+           
         }
-        //sendfeadbacks
+        //deletesession
     }
 }
